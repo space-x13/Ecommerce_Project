@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+.mall{
+    font-weight: 600;
+    line-height: 1.2;
+    text-align: center;
+    color: blue;
+}
+#header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    background-color: #e3e6f3;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+/* navigation */
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+/* removing bullet point */
+#navbar li{
+    list-style-type: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+/* removing underline */
+#navbar li a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+}
+
+/* adding hovering effect to nav links */
+#navbar li a:hover,
+#navbar li a.active{
+    color: #ff9933; 
+}
+
+/* adding hovering underline effects to nav links */
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content: "";
+    display: block;
+    width: 35%;  
+    height: 2px;
+    background-color: #FF9933;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+/* reducing the logo size */
+.logo{
+    width: 100px;
+    height: auto;
+}

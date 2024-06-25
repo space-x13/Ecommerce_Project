@@ -71,3 +71,31 @@ body{
     width: 100px;
     height: auto;
 }
+
+/* search styling */
+.search{
+    display: flex;
+    flex-grow: 1;
+    margin: 0 20px;
+    align-items: center;
+    justify-content: center;
+}
+.search input{
+    flex-grow: 1;
+    padding: 8px;
+    border: 2px solid #ddd;
+    border-radius: 50px;
+    color: #fff;
+    border-right: none;
+}
+
+.search button{
+    padding: 8px 16px;
+    border: 1px solid #edf045;
+    cursor: pointer;
+    background-color: #edf045;
+    color: #1a1a1a;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: inherit;
+}
